@@ -1,0 +1,32 @@
+# --- Secretos ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Datos (tickets, chunks, índices: contienen información de clientes) ---
+data/
+chroma_db/
+*.pkl
+*.jsonl
+*.sqlite3
+
+# --- Logs (pueden incluir fragmentos de tickets) ---
+logs/
+*.log
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# --- IDE / herramientas ---
+.idea/
+.vscode/
+.claude/settings.local.json
+
+# --- Notas sueltas ajenas al proyecto ---
+ok.md
